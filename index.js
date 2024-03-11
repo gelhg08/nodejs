@@ -75,7 +75,7 @@ db.once("open", () => {
   });
 
   //buscar documentos donde un campo coincide con una expresión regular.
-  app.get("/api/users/ejercicio4", async (req, res) => {
+  app.get("/api/users/ejercicio10", async (req, res) => {
     const users = await user.find({ nombre: { $regex: /^Elena/ } });
     res.json(users);
   });
